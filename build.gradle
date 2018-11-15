@@ -30,8 +30,8 @@ dependencies {
             'org.json:json:20180130',
             'com.amazonaws:aws-java-sdk-s3',
             'com.googlecode.json-simple:json-simple:1.1'
-
     )
+    compile fileTree(include: ['*.jar'], dir: 'libs')
 }
 
 task buildZip(type: Zip) {
